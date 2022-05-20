@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #formdiv{
+            display: flex;
+            border: 3.5px solid;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            width: 40%;
+            height: 50%;
+            justify-content: center;
+            border-radius: 15px;
+            color: teal;
+            
+        }
+        #formdiv div{
+            display: flex;
+            /* border: 1px solid; */
+            justify-content: space-between;
+            margin: 15px;
+        }
+        #box{
+            /* border: 5px solid; */
+            width: 100%;
+            height: 665px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar{
+            border: 3.5px solid teal;
+            width: 100%;
+            height: 70px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="batch1"></div>
+        <div id="batch2"></div>
+        <div id="batch3"></div>
+        <div id="batch4"></div>
+        
+    </div>
+    <a href="dashboard.html">
+        <button>dashboard</button>
+    </a>
+
+    <div id="box">
+
+        <div id="formdiv">
+            <form onsubmit="addStudent()" id="studentForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" placeholder="Enter name" id="name">
+    
+                </div>
+                <div>
+                    
+                    <label for="course">Course:</label>
+                    <input type="text" placeholder="Enter course" id="course">
+    
+                </div>
+                <div>
+                    
+                    <label for="unit">Unit:</label>
+                    <input type="text" placeholder="Enter unit" id="unit">
+                </div>
+                <div>
+                    <label for="image">Image:</label>
+                    <input type="text" placeholder="Enter image URL" id="image">
+    
+                </div>
+                <div>
+                    <label for="batch">Batch:</label>
+                    <input type="text" placeholder="Enter batch" id="batch">
+    
+                </div>
+                
+                <input type="submit" id="submit">
+            </form>
+    
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
